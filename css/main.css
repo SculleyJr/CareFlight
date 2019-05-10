@@ -1,0 +1,583 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo{
+    grid-column-start: 1;
+}
+
+.image-logo{
+    height: 200px;;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 25%[col-start]);
+    grid-template-rows: repeat(4, 25%[row-start]);
+    width: 100%;
+}
+.phone{
+    font-size: 25pt;
+    font-family: 'Dosis', sans-serif;
+    grid-column-start: 4;
+    justify-self: end;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.links{
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-column-end: end;
+    align-self: end ;
+
+}
+.nav-links li{
+    display: inline;
+    grid-row-start: 2;
+    font-size: 27pt;
+    padding-left: 30px;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 40px;
+    
+}
+
+li > a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1865px){
+    .nav-links li{
+        text-decoration: none;
+        display: inline;
+        grid-row-start: 2;
+        font-size: 22pt;
+        padding-left: 30px;
+        font-family: 'Dosis', sans-serif;
+        padding-top: 40px;
+        
+    }
+}
+.nav-links a{
+    text-decoration: none;
+    color: #2c993e;
+}
+
+@media only screen and (max-width: 1400px){
+    .nav-links li{
+        text-decoration: none;
+        display: inline;
+        grid-row-start: 2;
+        font-size: 17pt;
+        padding-left: 30px;
+        font-family: 'Dosis', sans-serif;
+        padding-top: 40px;
+        
+    }
+}
+
+
+
+
+.head-img{
+    max-height: 660px;
+    max-width: 100%; 
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.image1{
+    width: 100%;
+}
+
+.image2 {
+    position: absolute;
+    width: 45%;
+    top: 30px;
+    left: 70px;
+  }
+
+  .header {
+      height: 300px;
+  }
+
+ .head-logo{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+
+.text-box{
+    height: 400px;
+    z-index: 1000;
+    position: absolute;   
+    color: red;
+    font-size: 72pt;
+}
+
+.photo {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+}
+
+.headliner{
+    margin-top: 35%;
+    z-index: 1000;
+    color: goldenrod;
+    background-color: #3d2f6040;
+    text-align: center;
+    width: 50%;
+    font-size: 50pt;
+
+}
+
+.format{
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/landed.jpg);
+    height: 400px;;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #2c993e;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto[col-start]);
+    grid-template-rows: repeat(3, auto[col-start]);
+    z-index: -1;
+}
+.format-h{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-items: center;
+
+}
+
+.info{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    color: white;
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    font-size: 20pt;
+    justify-content: center;
+}
+
+.format-text{
+    color: white;
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    font-size: 40pt;
+    justify-content: center;
+    
+}
+
+
+.format-text-two{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    grid-column-start: 2;
+    grid-row-start: 3;
+    font-family: 'Anton', sans-serif;
+    font-size: 40pt;
+    
+}
+
+.invisible {
+    transition: opacity 0.5s ease;
+    opacity: 0.0;
+  }
+  
+  .visible {
+    transition: opacity 0.5s ease;
+    opacity: 1.0;
+  }
+
+  .body-content{
+      display: flex;
+    background-color: rgba(12, 12, 12, 0.2);
+    height: 1000px;
+  }
+
+  
+
+  .body-text{
+      position: relative;
+      left: 50px;
+      top: 50px;
+      font-family: 'Archivo' , sans-serif;
+      justify-content: space-around;
+  }
+
+  .body-format{
+      left: 10%;
+      background-color: rgb(202, 22, 22);
+  }
+
+  .footer{
+    height: 250px;
+    background-color: #3d2f60;
+    display: grid;
+    grid-template-columns: repeat(10, 10%[col-start]);
+    grid-template-rows: 15% 15% 30% 10% 10% 10% 10%;
+    color: white;
+  }
+
+  .contact{
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      
+      }
+
+    
+
+    .contact h1{
+        font-family: 'Bungee',sans-serif ;
+        font-size: 12pt;
+    }
+
+    .contact-head{
+        grid-column-start: 2;
+        grid-row-start: 2;
+        font-family: 'Bungee',sans-serif ;
+        font-size: 8pt;
+    }
+
+    .crew-head{
+        grid-column-start: 4;
+        grid-row-start: 2;
+        font-family: 'Bungee',sans-serif ;
+        font-size: 8pt;
+    }
+    .crews{
+      grid-column-start: 4;
+      grid-column-end: end;
+      grid-row-start: 3;
+    }
+    .crews h1{
+        font-family: 'Bungee',sans-serif ;
+        font-size: 12pt;
+    }
+
+    .nav-head{
+        grid-column-start: 6;
+        grid-row-start: 2;
+        font-family: 'Bungee',sans-serif ;
+        font-size: 8pt;
+    }
+
+    .nav-ul{
+        list-style: none;
+        color: black;
+    }
+    .nav-ul li{
+        text-decoration: none;
+        font-family: 'Bungee',sans-serif ;
+        font-size: 11pt;
+        color: black;   
+    }
+        
+    
+
+    .nav-list li{
+        text-decoration: none;
+        font-family: 'Bungee',sans-serif ;
+        font-size: 15px;
+        color: white !;   
+        padding-top: 0;     
+    }
+    .nav-list{
+        grid-column-start: 6;
+        grid-row-start: 3;
+        justify-items: start;
+        color: black;
+    }
+    .social{
+        font-size: 28pt;
+        grid-column-start: 8;
+        grid-row-start: 3;
+        justify-items: start;
+        color: grey;
+    }
+
+    .nav-ul >   li > a {
+        color: white;
+    }
+
+    .social-head{
+        grid-column-start: 8;
+        grid-row-start: 2;
+        font-family: 'Bungee',sans-serif ;
+        font-size: 8pt;
+    }
+
+    .copywright{
+        grid-column-start: 4;
+        grid-column-end: end;
+        grid-row-start: 7; 
+        font-size: 8pt;
+    }
+
+    .about-wrapper{
+        background-image: url(/img/background-about.jpg);
+        height: 1500px;
+        display: grid;
+        grid-template-columns: repeat(20, 5%[col-start]);
+        grid-template-rows: repeat(50, 2%[row-start]);
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .dog-photo{
+        grid-column-start: 3;
+        grid-row-start: 6;
+    }
+
+    .dog-photo img{
+        border-radius: 100%;
+    }
+
+    .snow-face IMG{
+        border-radius: 8%;
+    }
+
+    .dog-high-five IMG{
+        border-radius: 5%;
+    }
+
+    .about-head{
+        grid-column-start: 9;
+        grid-column-end: end;
+        grid-row-start: 6;
+        font-size: 15pt;
+        color: white;
+    }
+
+    .about-body{
+        grid-column-start: 9;
+        grid-column-end: 19;
+        grid-row-start: 8;
+        font-size: 10pt; 
+        color: white;
+    }
+    .solid{
+        background-color: rgb(183, 252, 194);
+        grid-column-start: start;
+        grid-row-start:10 ;
+        position: absolute;
+        top: 1000px;
+        width: 100%;
+        height: 750px;
+    }
+
+    .snow-face{
+       
+        z-index: 10;
+        width: 25%;
+        grid-column-start: 13;
+        grid-row-start: 32;
+    }
+
+    .snow-face img{
+        height: 400px;
+    }
+
+    .about-head-two{
+        z-index: 150;
+        grid-column-start: 3;
+        grid-column-end: end;
+        grid-row-start: 32;
+        font-size: 15pt;
+        color: black;
+    }
+    .about-body-two{
+        z-index: 1500;
+        grid-column-start: 3;
+        grid-column-end: 12;
+        grid-row-start: 34;
+        font-size: 10pt; 
+        color: black;
+    }
+
+    .about-wrapper-two{
+        background-color: rgba(255,255,255,0.2);
+        background-blend-mode: lighten;
+        background-image: url(/img/RedRockRiverEdit.jpg);
+        height: 750px;
+        display: grid;
+        grid-template-columns: repeat(20, 5%[col-start]);
+        grid-template-rows: repeat(50, 2%[row-start]);
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .dog-high-five{
+        
+        grid-column-start: 3;
+        grid-row-start: 10;
+        
+    }
+
+    .about-head-three{
+        grid-column-start: 12;
+        grid-column-end: end;
+        grid-row-start: 10;
+        font-size: 15pt;
+        color: white;
+    }
+
+    .about-body-three{
+        grid-column-start: 12;
+        grid-column-end: 18;
+        grid-row-start: 14;
+        font-size: 10pt;
+        color: white;
+    }
+
+    .history-line{
+        height: 2500px;
+    }
+
+    .line-style{
+        stroke:rgb(156, 149, 149);stroke-width:2;
+
+    }
+    .line-style-two{
+        z-index: 100;
+    }
+
+    
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
