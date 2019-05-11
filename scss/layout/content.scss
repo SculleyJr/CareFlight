@@ -1,0 +1,125 @@
+.body-content {
+  display: grid;
+  height: 80%;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 300px 75px 300px auto;
+
+  .vl {
+    border-left: 2px solid rgb(139, 139, 139);
+    height: 500px;
+    position: relative;
+    display: inline-block;
+    margin-left: 50%;
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .news-img {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    justify-self: center;
+    border-radius: 2%;
+  }
+
+  .news-img-wrapper {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: 10px auto auto 20px;
+    grid-column-gap: 35px;
+    grid-template-rows: 30px auto;
+    grid-row-gap: 30px;
+  }
+  .news-img-wrapper img {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: left;
+    justify-self: center;
+  }
+
+  .news-img-wrapper h1 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    justify-self: left;
+    text-align: center;
+    justify-self: left;
+  }
+
+  .news-img-wrapper h4 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    justify-self: left;
+    justify-self: center;
+  }
+
+  .fleet-wrapper {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
+
+    .kingAir {
+      color: green;
+      text-align: left;
+      margin-right: 10%;
+      justify-self: left;
+    }
+
+    .copter {
+      color: green;
+      text-align: left;
+      margin-right: 10%;
+      grid-column-start: 1;
+      grid-row-start: 2;
+      justify-self: left;
+    }
+
+    .ambo {
+      color: green;
+      text-align: left;
+      margin-right: 10%;
+      grid-column-start: 1;
+      grid-row-start: 3;
+      justify-self: left;
+    }
+  }
+  .fleet-wrapper img {
+    height: 400;
+  }
+
+  .fleet-img1 {
+    height: 200px;
+    width: 250px;
+    border-radius: 4%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .fleet-img2 {
+    height: 200px;
+    width: 250px;
+    border-radius: 4%;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .fleet-img3 {
+    height: 200px;
+    width: 250px;
+    border-radius: 4%;
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .fleet-wrapper h2 {
+    text-transform: uppercase;
+    color: #645194;
+  }
+
+  .fleet-wrapper h2:hover {
+    color: #2c993e;
+  }
+}

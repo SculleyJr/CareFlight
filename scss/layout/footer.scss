@@ -1,0 +1,119 @@
+.footer {
+  height: 250px;
+  background-color: #3d2f60;
+  display: grid;
+  grid-template-columns: repeat(10, 10%[col-start]);
+  grid-template-rows: 15% 15% 30% 10% 10% 10% 10%;
+  color: white;
+}
+
+//  which one
+// .footer {
+//   width: 100%;
+//   padding: 60px 0 0 0;
+//   height: 400px;
+//   background-color: #333;
+//   display: grid;
+//   grid-template-columns: 4% 24% 24% 24% 24%;
+//   grid-template-rows: 20% 20% 20% 40%;
+// }
+
+.contact {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+}
+
+.contact h1 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 12pt;
+}
+
+.contact-head {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-family: 'Bungee', sans-serif;
+  font-size: 8pt;
+}
+
+.footer-links {
+  grid-column-start: 3;
+  padding-left: 40px;
+  grid-row-start: 2;
+}
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+.footer-links a:hover {
+  color: grey;
+}
+.sponsors-head {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.sponsor-links a {
+  text-decoration: none;
+  color: white;
+}
+.sponsor-links {
+  grid-column-start: 4;
+  grid-row-start: 2;
+  padding-left: 40px;
+}
+
+.copywright {
+  grid-column-start: 4;
+  grid-column-end: end;
+  grid-row-start: 7;
+  font-size: 4pt;
+}
+
+.contact-title {
+  grid-column-start: 2;
+  padding-top: 20px;
+}
+.navigation {
+  grid-column-start: 3;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.copywright-one {
+  grid-column-start: 3;
+  grid-column-end: end;
+  grid-row-start: 4;
+  padding-bottom: 10px;
+  align-self: end;
+}
+
+.address {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.social-icons a {
+  font-size: 30pt;
+  text-decoration: none;
+  color: white;
+  padding-left: 200px;
+  display: block;
+  padding-bottom: 20px;
+}
+.social-icons a:hover {
+  color: grey;
+}
+.social-icons {
+  grid-row-start: 3;
+  grid-column-start: 5;
+}
+
+#map {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  height: 150px;
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 20px;
+}

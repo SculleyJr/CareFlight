@@ -1,0 +1,144 @@
+.top-add {
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%[col-start]);
+  grid-template-rows: repeat(4, 25%[row-start]);
+  background-color: white;
+
+  .logo-edit {
+    height: 150px;
+    position: relative;
+  }
+
+  .phone-number {
+    font-size: 25pt;
+    font-family: 'Rationale', sans-serif;
+    padding-top: 20px;
+    position: absolute;
+    right: 20px;
+
+    a {
+      text-decoration: none;
+      color: #3d2f60;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  .camts img {
+    position: absolute;
+    height: 60px;
+    width: auto;
+    top: 80px;
+    right: 20px;
+  }
+}
+
+.format {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 40vh;
+  white-space: nowrap;
+  text-align: center;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/landed.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-h {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    color: white;
+    font-size: 3em;
+  }
+
+  .info {
+    color: white;
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .format {
+    &-h {
+      font-size: 2.3em;
+    }
+
+    .info {
+      font-size: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .format {
+    white-space: normal;
+    word-break: break-word;
+
+    &-h {
+      font-size: 1.9em;
+    }
+
+    .info {
+      font-size: 0.6;
+    }
+  }
+}
+
+.mission-headline {
+  font-size: 3vw;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 4px;
+  word-spacing: 8px;
+}
+
+.mission {
+  grid-column-start: 2;
+  justify-self: center;
+  text-align: center;
+
+  &-text {
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.body-headline {
+  height: auto;
+  display: grid block;
+  grid-template-columns: 5% auto 5%;
+  height: 75px;
+  font-family: 'Anonymous Pro', monospace;
+  color: #4e4e4e;
+}
+
+.hr-header {
+  size: 10px;
+  height: 1px;
+  width: 85%;
+  color: red;
+  background-color: rgb(32, 18, 68);
+}
+
+.hr-underline {
+  size: 10px;
+  height: 1px;
+  width: 75%;
+  color: red;
+  background-color: rgb(32, 18, 68);
+  grid-column-start: 2;
+}

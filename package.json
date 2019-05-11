@@ -1,0 +1,23 @@
+{
+  "name": "CareFlight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/main.scss -o dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SculleyJr/CareFlight.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SculleyJr/CareFlight/issues"
+  },
+  "homepage": "https://github.com/SculleyJr/CareFlight#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

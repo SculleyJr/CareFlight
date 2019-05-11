@@ -1,0 +1,74 @@
+@import 'base';
+
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/body_meat';
+@import 'layout/footer';
+
+/************* Not sure if this is being used *************/
+// .crew-head {
+//   grid-column-start: 4;
+//   grid-row-start: 2;
+//   font-family: 'Bungee', sans-serif;
+//   font-size: 8pt;
+// }
+// .crews {
+//   grid-column-start: 4;
+//   grid-column-end: end;
+//   grid-row-start: 3;
+// }
+// .crews h1 {
+//   font-family: 'Bungee', sans-serif;
+//   font-size: 12pt;
+// }
+/* .nav-head {
+  grid-column-start: 6;
+  grid-row-start: 2;
+  font-family: 'Bungee', sans-serif;
+  font-size: 8pt;
+}
+
+.nav-ul {
+  list-style: none;
+  color: black;
+}
+.nav-ul li {
+  text-decoration: none;
+  font-family: 'Bungee', sans-serif;
+  font-size: 11pt;
+  color: black;
+}
+
+.nav-list li {
+  text-decoration: none;
+  font-family: 'Bungee', sans-serif;
+  font-size: 15px;
+  color: white !;
+  padding-top: 0;
+}
+.nav-list {
+  grid-column-start: 6;
+  grid-row-start: 3;
+  justify-items: start;
+  color: black;
+} 
+
+ .social {
+   font-size: 28pt;
+   grid-column-start: 8;
+   grid-row-start: 3;
+   justify-items: start;
+   color: grey;
+ }
+
+.nav-ul > li > a {
+  color: white;
+} 
+
+.social-head {
+  grid-column-start: 8;
+  grid-row-start: 2;
+  font-family: 'Bungee', sans-serif;
+  font-size: 8pt;
+} */
